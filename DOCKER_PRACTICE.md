@@ -69,6 +69,11 @@ Command to build the image:
 docker build -t <dockerhubusername>/<imagename>:<tag> .
 ```
 
+OR if you don't want to push to Docker Hub: (just need to change compose file to use the image name you build locally)
+```bash
+docker build -t <imagename>:<tag> .
+```
+
 Command to run the image using Docker Compose:
 
 ```bash
