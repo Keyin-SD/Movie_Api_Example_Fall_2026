@@ -1,0 +1,9 @@
+services:
+  myapp-main:
+    image: jkells/movieapp:latest
+    ports:
+      - 8080:8080
+    environment:
+      - spring.datasource.url=jdbc:mysql://host.docker.internal:3306/fall2026
+      - spring.datasource.password=jordan1234
+      - spring.datasource.username=root
